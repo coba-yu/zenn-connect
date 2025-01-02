@@ -1,5 +1,9 @@
 # zenn-connect
 
+## 初期設定
+
+[Zenn CLIをインストールする](https://zenn.dev/zenn/articles/install-zenn-cli)
+
 ## 記事の作成
 
 ```bash

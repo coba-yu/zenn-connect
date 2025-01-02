@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zenn-cli": "^0.1.157"
+    "zenn-cli": "^0.1.158"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//coba-yu/zenn-connect.git"
   }
 }
