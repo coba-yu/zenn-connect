@@ -12,7 +12,35 @@ published: true
 
 https://brew.sh/
 
-## Git Completion
+## GitHub
+
+### .gitconfig
+
+```
+cat <<EOF > ~/.gitconfig 
+[user]
+    name = coba-yu
+    email = yukob.formal@gmail.com
+
+[alias]
+    b = branch
+    c = commit
+    ch = checkout
+    cm = commit -m
+    l = log --oneline
+    s = status -s --untracked-files=no
+    u = add -u
+
+EOF
+```
+
+### GitHub CLI
+
+```shell
+brew install gh
+```
+
+### Git Completion
 
 https://github.com/git/git/tree/master/contrib/completion
 
