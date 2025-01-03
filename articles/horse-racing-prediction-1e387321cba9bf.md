@@ -12,6 +12,23 @@ published: false
 
 - [netkeiba](https://db.netkeiba.com/)
 
+data directory structure:
+
+```
+data
+└── cache
+    ├── html
+    │   ├── horses
+    │   │   └── race_date={yyyymmdd}
+    │   │       └── {horse_id}.html    
+    │   ├── race_daily_results
+    │   │   └── race_date={yyyymmdd}
+    │   │       └── {race_id}.html    
+    │   └── race_list
+    │       └── {yyyymmdd}.html
+    └── parquet
+```
+
 ### 前処理後の特徴量一覧
 
 説明変数:
