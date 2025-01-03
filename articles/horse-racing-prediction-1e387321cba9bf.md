@@ -6,6 +6,18 @@ topics: ["python", "ai"]
 published: false
 ---
 
+## Structure
+
+```
+.
+├── data
+└── src
+    └── horse_racing
+        ├── core        # client, utility functions
+        ├── repository  # cache raw html, normalize column names
+        └── usecase     # preprocess (convert raw data to features)
+```
+
 ## Input data
 
 ### data source
