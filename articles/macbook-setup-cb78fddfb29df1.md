@@ -80,6 +80,10 @@ gcloud components update
 gcloud components install beta
 ```
 
+## Terraform
+
+https://developer.hashicorp.com/terraform/install
+
 ## zsh
 
 ### .zshenv
