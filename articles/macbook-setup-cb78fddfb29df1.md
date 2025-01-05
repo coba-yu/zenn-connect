@@ -58,6 +58,28 @@ curl -s https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/comp
   -o ~/.zsh/_git
 ```
 
+## Google Cloud Platform
+
+### gcloud
+
+https://cloud.google.com/sdk/docs/install?hl=ja
+
+`google-cloud-cli-darwin-arm.tar.gz` をダウンロードして解凍する.
+
+```shell
+curl -Os https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-arm.tar.gz
+tar -xzvf google-cloud-cli-darwin-arm.tar.gz
+./google-cloud-sdk/install.sh --command-completion=true --install-python=false
+./google-cloud-sdk/bin/gcloud init
+```
+
+beta componentをinstallする.
+
+```shell
+gcloud components update
+gcloud components install beta
+```
+
 ## zsh
 
 ### .zshenv
@@ -88,6 +110,12 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/yukob/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yukob/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/yukob/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yukob/google-cloud-sdk/completion.zsh.inc'; fi
 
 EOF
 ```
