@@ -28,16 +28,14 @@ https://developer.hashicorp.com/terraform/install
 
 ### .pre-commit-config.yamlの作成
 
-`entry` と `files` で指定している `terraform/` はterraformのコードがあるディレクトリに適宜修正してください.
-
 ```yaml
 -   repo: local
     hooks:
     -   id: terraform-fmt
         name: terraform-fmt
-        entry: terraform fmt terraform/
+        entry: terraform fmt
         language: system
-        files: ^terraform/.*
+        types: [ terraform ]
 ```
 
 ### pre-commitのインストール
