@@ -57,8 +57,8 @@ data
 | total_weight        | 斤量          | ジョッキーの体重や鞍などを含めた重量のこと |
 | sex                 | 性別          |
 | age                 | 馬齢          |
-| weight              | 馬体重         |
-| weight_diff         | 馬体重差        |
+| weight              | 馬体重         | 発表時間が1h前とかなので使いづらそう   |
+| weight_diff         | 馬体重差        | 同上                    |
 | ground_type         | 地面の種類       | 芝やダート                 |
 | ground_state        | 地面の状態       |
 | rank_last_{n}races  | 直近{n}レースの順位 | n = 3, 5, 10, 1000    |
@@ -70,3 +70,18 @@ data
 | place               | 開催場所        | 
 
 目的変数: first_rank_flag
+
+## Appendix - GCP
+
+### 利用するSerivceのAPIを有効化
+
+- https://console.cloud.google.com/apis/api/aiplatform.googleapis.com
+- https://console.cloud.google.com/apis/api/cloudscheduler.googleapis.com
+- https://console.cloud.google.com/apis/api/cloudresourcemanager.googleapis.com
+- https://console.cloud.google.com/apis/api/pubsub.googleapis.com
+- https://console.cloud.google.com/apis/api/storage.googleapis.com
+
+### Vertex AI Pipelineの構築
+
+1. https://cloud.google.com/vertex-ai/docs/pipelines/configure-project?hl=ja
+2. https://cloud.google.com/vertex-ai/docs/pipelines/build-pipeline?hl=ja
