@@ -3,7 +3,7 @@ title: "MacBook Setup手順"
 emoji: "💻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mac", "github"]
-published: true
+published: false
 ---
 
 個人用の備忘録です.
